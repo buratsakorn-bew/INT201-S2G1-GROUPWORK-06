@@ -12,3 +12,5 @@ Member
 5.63130500090 ภัทรดนัย ดีรักษา
 
 6.63130500105 วารีวัล พงศ์พันธ์ชัยกุล
+
+link PDF filr : [Click here](https://docs.google.com/document/d/1x3c9UJSy7kKf5VWHTqAdj-KSGHtkzGAJhlIE-48FTnQ/edit?usp=sharing)
