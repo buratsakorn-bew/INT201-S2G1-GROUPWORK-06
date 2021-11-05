@@ -1,8 +1,18 @@
 import { products } from "./product.js";
-console.log(products[0].id);
+
 //Select div products List
 const divProducts = document.querySelector('#products');
 divProducts.setAttribute("class", "container row justify-content-center mx-auto");
+
+// let search = document.querySelector("#search");
+// let booleansearch = false;
+// let Product = Product1;
+
+// search.addEventListener("click" ,() => {
+//     booleansearch != booleansearch
+// }
+// )
+
 
 //Array for extract data from Product-list
 for (let i = 0; i < products.length; i++) {
@@ -38,7 +48,7 @@ for (let i = 0; i < products.length; i++) {
     const pProductButtom = document.createElement('buttom');
     pProductButtom.setAttribute("type", "button");
     pProductButtom.setAttribute("class", " btn btn-outline-dark rounded-0");
-   
+
     pProductButtom.setAttribute("onclick", "addAlert()");
     pProductButtom.textContent = "Add Now";
 
@@ -55,5 +65,11 @@ for (let i = 0; i < products.length; i++) {
     //AppendChild to divProducts
     ProductEle.appendChild(card);
     divProducts.appendChild(ProductEle);
+
+    //Alertเพิ่มสินค้าลงไปในตะกร้า
+    let addAlert = pd => {
+        alert(`${products.name} is in your cart.`);
+
+    }
 
 }
