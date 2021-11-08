@@ -4,15 +4,6 @@ import { products } from "./product.js";
 const divProducts = document.querySelector('#products');
 divProducts.setAttribute("class", "container row justify-content-center mx-auto");
 
-// let search = document.querySelector("#search");
-// let booleansearch = false;
-// let Product = Product1;
-
-// search.addEventListener("click" ,() => {
-//     booleansearch != booleansearch
-// }
-// )
-
 
 //Array for extract data from Product-list
 for (let i = 0; i < products.length; i++) {
@@ -52,8 +43,6 @@ for (let i = 0; i < products.length; i++) {
     pProductButtom.setAttribute("onclick", "addAlert()");
     pProductButtom.textContent = "Add Now";
 
-
-
     //AppendChild to ProductEle
     card.appendChild(pProductImg);
     card.appendChild(pProductId);
@@ -66,10 +55,7 @@ for (let i = 0; i < products.length; i++) {
     ProductEle.appendChild(card);
     divProducts.appendChild(ProductEle);
 
-    //Alertเพิ่มสินค้าลงไปในตะกร้า
-    let addAlert = pd => {
-        alert(`${products.name} is in your cart.`);
 
-    }
+
 
 }
